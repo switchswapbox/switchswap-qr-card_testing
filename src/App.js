@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { QRNormal } from "react-qrbtf";
+import CardFormSvg from "./cardFormSvg/CardFormSvg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CardFormSvg>
+        <QRNormal
+          value="react-qrbtf"
+          className="my-qrcode"
+          styles={{ svg: { width: "200px" } }}
+          type="round"
+          size={50}
+          opacity={80}
+          posType="planet"
+          otherColor="#33CCCC"
+          posColor="#009999"
+        />
+      </CardFormSvg>
     </div>
   );
 }
