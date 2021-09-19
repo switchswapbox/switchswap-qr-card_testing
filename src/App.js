@@ -9,7 +9,7 @@ function App() {
         <QRNormal
           value="react-qrbtf"
           className="my-qrcode"
-          styles={{ svg: { width: "200px" } }}
+          styles={{ svg: { width: "100px", height: "100px" } }}
           type="round"
           size={50}
           opacity={80}
