@@ -1,16 +1,18 @@
 import "./App.css";
-import { QRNormal } from "react-qrbtf";
+import { QRNormal as QRCode } from "react-qrbtf";
 import CardFormSvg from "./cardFormSvg/CardFormSvg";
 
 function App() {
   return (
     <div className="App">
       <CardFormSvg>
-        <QRNormal
-          value="react-qrbtf"
+        <QRCode
+          value="https://github.com/ciaochaos/qrbtf/tree/master/src/components/svg"
           className="my-qrcode"
-          styles={{ svg: { width: "100px", height: "100px" } }}
-          type="round"
+          styles={{
+            svg: { width: "370", height: "370", viewBox: "0 0 50 50" },
+          }}
+          type="rand"
           size={50}
           opacity={80}
           posType="planet"
